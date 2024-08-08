@@ -126,21 +126,21 @@ public class Main {
         panel.add(tanBtn);
         panel.add(acosBtn);
         panel.add(asinBtn);
-        panel.add(atanBtn);
+        panel.add(onBtn);
 
+        panel.add(atanBtn);
         panel.add(powBtn);
         panel.add(sqrtBtn);
         panel.add(factBtn);
         panel.add(percBtn);
         panel.add(lnBtn);
-        panel.add(logBtn);
         panel.add(numberButtons[1]);
         panel.add(numberButtons[2]);
         panel.add(numberButtons[3]);
+        panel.add(logBtn);
         panel.add(expBtn);
         panel.add(meanBtn);
 
-        panel.add(onBtn);
         panel.add(numberButtons[4]);
         panel.add(numberButtons[5]);
         panel.add(numberButtons[6]);
@@ -475,11 +475,13 @@ public class Main {
                     textField.setText("No Data");
                     return;
                 }
+                //mean
                 double sum = 0;
                 for (int i = 0; i < count; i++) {
                     sum += numbers[i];
                 }
                 double mean = sum / count;
+                //varience
                 double varianceSum = 0;
                 for (int i = 0; i < count; i++) {
                     varianceSum += Math.pow(numbers[i] - mean, 2);
