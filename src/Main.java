@@ -213,32 +213,6 @@ public class Main {
                 textField.setText("");
             }
         });
-        eqBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                num2 = Double.parseDouble(textField.getText());
-                switch (operator){
-                    case '+':{
-                        result = num1+num2;
-                        break;
-                    }
-                    case '-':{
-                        result = num1-num2;
-                        break;
-                    }
-                    case '*':{
-                        result = num1*num2;
-                        break;
-                    }
-                    case '/':{
-                        result = num1/num2;
-                        break;
-                    }
-                }//end switch
-                textField.setText(result+"");
-                num1 = result;
-            }
-        });
         clrBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
